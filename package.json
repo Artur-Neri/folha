@@ -1,0 +1,20 @@
+{
+  "name": "folha",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build && vite build --mode portable --outDir portable",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "playwright test"
+  },
+  "dependencies": { "exceljs": "^4.4.0" },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "jszip": "^3.10.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0"
+  },
+  "overrides": { "uuid": "^11.1.1" }
+}
